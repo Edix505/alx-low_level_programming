@@ -9,13 +9,15 @@
  * Return: Always 0 (Success)
  */
 
-int main(void)
+int main()
 {
 	char low;
 
 	for (low = 'z'; low >= 'a'; low--)
+	{
 		putchar(low);
-		putchar('\n');
+	}
+	putchar('\n');
 
 	return (0);
 }
