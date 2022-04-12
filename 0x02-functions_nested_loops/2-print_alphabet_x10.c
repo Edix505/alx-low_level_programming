@@ -1,4 +1,7 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 /**
   * print_alphabet_x10 - repeats the print_alphabet 10 times.
   */
