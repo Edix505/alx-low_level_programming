@@ -2,30 +2,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include "main.h"
+
+
 /**
- * main-main block 
- * description: print _putchar on a new line
- * Return: On success 0
+ * main - Entry point
+ *
+ * Return: nothing, return void
  */
+
 int main(void)
-{	
-           putchar('_');
+{
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchar('h');
+_putchar('a');
+_putchar('r');
+_putchar('\n');
 
-           putchar('p');
-           
-	   putchar('u');
-           
-	   putchar('t');
-           
-	   putchar('c');
-           
-	   putchar('h');
-           
-	   putchar('a');
-           
-	   putchar('r');
-           
-	   putchar('\n');
-
-	   return (0);
+return (0);
 }
