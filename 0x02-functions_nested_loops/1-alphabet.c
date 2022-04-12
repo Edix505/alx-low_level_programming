@@ -1,9 +1,9 @@
 #include "main.h"
 /**
  * print_alphabet - prints the english alphabet from a-z.
- * Return: Always 0.
+ * Return: Nothing
  */
-int main (void)
+void print_alphabet(void);
 {
 	char c;
 
@@ -12,5 +12,4 @@ int main (void)
 		_putchar(c);
 	}
 	_putchar('\n');
-	return (0);
 }
