@@ -1,18 +1,14 @@
+#include "holberton.h"
 #include <unistd.h>
 
 /**
- * main - Check description
- * Description: It prints the word Holberton, followed by a new line.
- * Return: 0.
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
  */
-int main(void)
+int _putchar(char c)
 {
-	char word[8] = "_putchar";
-	int i;
-
-	for (i = 0; i < 9; i++)
-		_putchar(word[i]);
-	_putchar('\n');
-
-	return (0);
+	return (write(1, &c, 1));
 }
