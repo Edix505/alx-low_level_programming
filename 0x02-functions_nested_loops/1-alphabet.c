@@ -6,7 +6,7 @@
 /**
  * print_alphabet - prints the english alphabet from a-z.
  */
-void print_alphabet(void);
+void print_alphabet(void)
 {
 	char letter;
 
