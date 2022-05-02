@@ -7,10 +7,10 @@
  * a specific char
  * @size: size of array
  * @c: character to initialize with
- *
  * Return: Pointer
  */
 char *create_array(unsigned int size, char c)
+
 {
 	unsigned int i;
 	char *s;
