@@ -1,17 +1,23 @@
-#include <stdio.h>
-#include "dog.h"
-
+#ifndef _DOG_H_
+#define _DOG_H_
 /**
- * main - 
- *
- * Return: Always 0.
- */
-int main(void)
-{
-	dog_t *my_dog;
+ * struct dog -Dog data.
+ * @name: Name of the dog
+ * @age: age of the dog.
+ * @owner: owner of the dog.
+ * Desctiption: a structure with the name, age and owner of a dog.
+**/
 
-	my_dog = new_dog("Poppy", 3.5, "Bob");
-	printf("My name is %s, and I am %.1f :) - Woof!\n",
-	my_dog->name, my_dog->age);
-	return (0);
-}
+typedef struct dog
+{
+char *name;
+char *owner;
+float age;
+} dog_t;
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
+char *_strncpy(char *dest, char *src, int n);
+int _strlen(char *s);
+#endif
