@@ -1,8 +1,10 @@
 #include "lists.h"
 
 /**
- * free_dlistint - Frees a linked dlistint_t list.
- * @head: The head of the dlistint_t list.
+ * free_dlistint - Free the list
+ * @head: Head of the list
+ *
+ * Return: nothing
  */
 void free_dlistint(dlistint_t *head)
 {
